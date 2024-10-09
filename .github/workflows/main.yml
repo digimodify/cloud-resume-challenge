@@ -1,0 +1,94 @@
+name: main
+on: push
+jobs:
+  test-infra:
+    runs-on: ubuntu-latest
+    timeout-minutes: 2      
+    steps:
+      # Check out the code from the repository
+      - uses: actions/checkout@v4
+
+      # Set up Python 3.8
+      - uses: actions/setup-python@v4.6.0
+        with:
+          python-version: 3.8
+
+      # Install dependencies
+      - name: Install dependencies
+        run: |
+          python -m pip install --upgrade pip        
+          pip install -r requirements.txt        
+
+      # Set the PYTHONPATH and other environment variables
+      - name: Set PYTHONPATH
+        run: |
+          echo "PYTHONPATH=$PYTHONPATH:$GITHUB_WORKSPACE/infra" >> $GITHUB_ENV
+          echo "AWS_REGION=us-east-1" >> $GITHUB_ENV
+          echo "AWS_SAM_STACK_NAME=cloud-resume-challenge" >> $GITHUB_ENV 
+
+      # Configure AWS credentials
+      - name: Configure AWS credentials
+        uses: aws-actions/configure-aws-credentials@v3
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: "us-east-1"
+
+      # Run your tests
+      - name: Run tests       
+        run: |
+          pytest -v infra/tests/unit/test_handler.py
+
+  build-deploy-infra:
+    needs: test-infra
+    runs-on: ubuntu-latest
+    steps:
+      # Check out the code from the repository
+      - uses: actions/checkout@v3
+
+      # Set up Python 3.8
+      - name: Set up Python 3.8
+        uses: actions/setup-python@v4
+        with:
+          python-version: '3.8'
+
+      # Set up AWS SAM CLI
+      - uses: aws-actions/setup-sam@v2
+
+      # Configure AWS credentials
+      - uses: aws-actions/configure-aws-credentials@v3
+        with:
+          aws-access-key-id: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          aws-secret-access-key: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          aws-region: us-east-1
+
+      # Build the SAM application
+      - run: sam build --build-dir ../build  # Specify new build directory
+        working-directory: infra
+
+      # Deploy the SAM application
+      - run: |
+           sam deploy \
+              --stack-name ${{ secrets.AWS_SAM_STACK_NAME }} \
+              --s3-bucket my-resume-site-phantom \
+              --no-confirm-changeset \
+              --no-fail-on-empty-changeset \
+              --region us-east-1 \
+              --capabilities CAPABILITY_IAM
+        working-directory: infra
+
+  deploy-site:
+    runs-on: ubuntu-latest
+    steps:
+      # Check out the code from the repository
+      - uses: actions/checkout@v3
+
+      # Sync the website files to the S3 bucket
+      - uses: jakejarvis/s3-sync-action@master 
+        with:
+          args: --delete
+        env:
+          AWS_S3_BUCKET: my-resume-site-phantom
+          AWS_ACCESS_KEY_ID: ${{ secrets.AWS_ACCESS_KEY_ID }}
+          AWS_SECRET_ACCESS_KEY: ${{ secrets.AWS_SECRET_ACCESS_KEY }}
+          SOURCE_DIR: website/resume-site

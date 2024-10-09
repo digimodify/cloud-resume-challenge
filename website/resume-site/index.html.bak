@@ -1,0 +1,489 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+  <title>Christian Etienne</title>
+  <meta content="" name="description">
+  <meta content="" name="keywords">
+
+  <!-- Favicons -->
+  <link href="assets/img/site-icon.jpg" rel="icon">
+  <link href="assets/img/site-icon.png" rel="site-icon">
+
+  <!-- Fonts -->
+  <link href="https://fonts.googleapis.com" rel="preconnect">
+  <link href="https://fonts.gstatic.com" rel="preconnect" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Raleway:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+   
+
+  <!-- Vendor CSS Files -->
+  <link href="assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="assets/vendor/bootstrap-icons/bootstrap-icons.css" rel="stylesheet">
+  <link href="assets/vendor/aos/aos.css" rel="stylesheet">
+  <link href="assets/vendor/glightbox/css/glightbox.min.css" rel="stylesheet">
+  <link href="assets/vendor/swiper/swiper-bundle.min.css" rel="stylesheet">
+
+  <!-- Main CSS File -->
+  <link href="assets/css/main.css" rel="stylesheet">
+  <link href="assets/css/ulicon.css" rel="stylesheet">
+
+  <!-- Icons -->
+  <script src="https://kit.fontawesome.com/57a13b5ce8.js" crossorigin="anonymous"></script>
+
+</head>
+
+<body class="index-page">
+<header id="header" class="header d-flex flex-column justify-content-center">
+
+  <i class="header-toggle d-xl-none bi bi-list"></i>
+
+  <nav id="navmenu" class="navmenu">
+    <ul>
+      <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i><span style="font-size: small;">Home</span></a></li>
+      <li><a href="#about"><i class="bi bi-person navicon"></i><span style="font-size: small;">About</span></a></li>
+      <li><a href="#skills"><i class="bi bi-tools navicon"></i><span style="font-size: small;">Skills/Tools</span></a></li>
+      <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i><span style="font-size: small;">Resume</span></a></li>
+      <li><a href="#certifications"><i class="bi bi-award navicon"></i><span style="font-size: small;">Certification</span></a></li>
+      <li><a href="#portfolio"><i class="bi bi-github navicon"></i><span style="font-size: small;">Portfolio</span></a></li>
+      </ul>
+  </nav>
+  </nav>
+
+</header>
+
+  <main class="main">
+   
+    <!-- Hero Section -->
+    <section id="hero" class="hero section dark-background">
+
+      <img src="assets/img/cloudnaut.png" alt="">
+      <div class="container" data-aos="zoom-out">
+        <div class="row justify-content-start"> <!-- Changed justify-content-center to justify-content-start -->
+          <div class="col-lg-8"> <!-- Reduced the size of the column to move it to the left -->
+            <h2>Christian Etienne</h2>
+            <p>I'm a <span class="typed" data-typed-items="Cloud Engineer, Developer, Systems Administrator, Help Desk Technician, Team Player, Problem Solver">Designer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
+            <div class="social-links">
+              <a href="https://github.com/digimodify" target="_blank" style="color: #2d8feb;"><i class="bi bi-github"></i></a>
+              <a href="https://www.linkedin.com/in/etienneci" target="_blank" style="color: #2d8feb;"><i class="bi bi-linkedin"></i></a>
+              <a href="javascript:void(0);" onclick="copyEmail()" style="color: #2d8feb;" title="chrisetienne1@gmail.com"><i class="bi bi-envelope"></i></a>
+              
+              <script>
+                function copyEmail() {
+                  const email = "chrisetienne1@gmail.com";
+                  navigator.clipboard.writeText(email).then(() => {
+                    alert("Email address copied to clipboard: " + email);
+                  }).catch(err => {
+                    console.error('Failed to copy email: ', err);
+                  });
+                }
+              </script>
+            </div>
+            <br>
+            <a style="color: #ffffff; font-size: 1.5em;"> Visitors: </a> <a class="visits" style="color: #40fd06;font-size: 1.5em;"></a>            
+          </div>
+        </div>
+      </div>
+         
+    </section><!-- /Hero Section -->
+
+    <!-- About Section -->
+    <section id="about" class="about section">
+
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>About</h2>
+
+      </div><!-- End Section Title -->
+
+      <div class="container" data-aos="fade-up" data-aos-delay="100">
+
+        <div class="row gy-4 justify-content-center">
+          <div class="col-lg-4">
+        <img src="assets/img/bear.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-8 content">
+        <h2>IT Professional &amp; Student at Western Governors University</h2>           
+          <br>
+        <div class="row">
+          <div class="col-lg-6">
+            <ul>             
+            </ul>
+          </div>
+          <div class="col-lg-6">
+            <ul>
+          
+            </ul>
+          </div>
+        </div>
+        <p class="py-3"></p>
+        <p>I am a Systems Support Technician with 4 years of professional experience in IT and over a decade in customer service. I recently earned my Bachelor's degree in Cloud Computing from Western Governors University, solidifying my expertise in cloud technologies and infrastructure management.
+        <p>Throughout my academic and professional journey, I was able to gain a deep understanding of the strategies and tools used to improve businesses' infrastructure, operations, and security. I am a self-starter who thrives working both independently and within teams, always driven by a passion for continuous learning and problem-solving.</p>
+        <p>As I transition into the next phase of my career, I am excited to apply my knowledge of cloud technologies to help organizations optimize their IT environments and embrace innovative solutions.</p>
+        </p>
+          </div>
+        </div>
+
+      </div>
+
+    </section><!-- /About Section -->
+
+    <!-- Skills Section -->
+    <section id="skills" class="skills section">
+
+      <!-- Skills Section -->
+<section id="skills" class="skills section">
+  <!-- Section Title -->
+  <div class="container section-title" data-aos="fade-up">
+    <h2>Skill & Tools</h2>
+    <br>
+    <p>Here are some of the skills and tools I have experience with and continue to improve upon.</p>
+  </div>
+</section><!-- /Skills Section -->
+<!-- Icon Cards Section -->
+<section class="icon-cards" data-aos="fade-up">
+  <div class="container my-element"></div>
+  <ul>
+    <li style="--accent-color:#60c5a6">
+      <div class="icon"><i class="fa-brands fa-aws"></i></div>
+      <div class="title">AWS</div>
+      <div class="descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, impedit?</div>
+    </li>
+    <li style="--accent-color:#f20071">
+      <div class="icon"><i class="fa-brands fa-azure"></i></div>
+      <div class="title">Azure</div>
+      <div class="descr">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+    </li>
+    <li style="--accent-color:#FCBA35">
+      <div class="icon"><i class="fa-brands fa-docker"></i></div>
+      <div class="title">Docker</div>
+      <div class="descr">Lorem ipsum dolor sit.</div>
+    </li>
+    <li style="--accent-color:#DAE438">
+      <div class="icon"><i class="fa-brands fa-code-compare"></i></div>
+      <div class="title">Github Actions</div>
+      <div class="descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor laboriosam odio alias.</div>
+    </li>
+    <li style="--accent-color:#994D7F">
+      <div class="icon"><i class="fa-brands fa-github"></i></div>
+      <div class="title">Github</div>
+      <div class="descr">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+    </li>
+  </ul>
+  <ul>
+    <li style="--accent-color:#FF5733">
+      <div class="icon"><i class="fa-brands fa-python"></i></div>
+      <div class="title">Python</div>
+      <div class="descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Soluta, impedit?</div>
+    </li>
+    <li style="--accent-color:#4285F4">
+      <div class="icon"><i class="fa-brands fa-terminal"></i></div>
+      <div class="title">Bash</div>
+      <div class="descr">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+    </li>
+    <li style="--accent-color:#007ACC">
+      <div class="icon"><i class="fa-brands fa-terminal"></i></div>
+      <div class="title">Powershell</div>
+      <div class="descr">Lorem ipsum dolor sit.</div>
+    </li>
+    <li style="--accent-color:#61DAFB">
+      <div class="icon"><i class="fa-brands fa-terraform"></i></div>
+      <div class="title">Terraform</div>
+      <div class="descr">Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolor laboriosam odio alias.</div>
+    </li>
+    <li style="--accent-color:#563D7C">
+      <div class="icon"><i class="fa-brands fa-ansible"></i></div>
+      <div class="title">Ansible</div>
+      <div class="descr">Lorem ipsum dolor sit amet consectetur adipisicing elit.</div>
+    </li>
+  </ul>
+  <div class="credits">
+    <a target="_blank" href="https://www.freepik.com/premium-vector/modern-3d-infographic-template-with-5-steps-success_5957879.htm">inspired by</a>
+  </div>
+</section>
+
+</section><!-- /Icon Cards Section --> 
+      </div>
+    </div>
+     
+    </section><!-- /Skills Section -->
+
+    <!-- Resume Section -->
+    <section id="resume" class="resume section">
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Resume</h2>
+      </div><!-- End Section Title -->
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+   
+            <h3 class="resume-title">Work Experience</h3>
+            <br>
+            <div class="resume-item">
+              <h4>Systems Support Technician</h4>
+              <h5>2022 - Present</h5>
+              <p><em>UMBC Training Centers, Columbia, MD </em></p>
+                <ul>
+                <li>Provided tier 1 and tier 2 help desk support for employees and students, resolving technical issues promptly and effectively.</li>
+                <li>Configured, deployed, and managed servers and lab machines for student learning environments, by writing and leveraging Bash and PowerShell scripts, SaltStack, and Ansible.</li>
+                <li>Managed company devices, users, security policies, configuration settings, certificates, and other resources in Azure AD and Entra ID.</li>
+                <li>Analyzed, researched, and documented unknown issues and processes for remediation.</li>
+                </ul>
+              </ul>
+            </div><!-- Edn Resume Item -->
+
+            <div class="resume-item">
+              <h4>Technical Support Engineer</h4>
+              <h5>2021 - 2022</h5>
+              <p><em>Thrive, Silver Spring, MD</em></p>
+                <ul>
+                <li>Collaborated with a team of three to provide comprehensive IT support for approximately 1,000 users, including students, faculty, and staff.</li>
+                <li>Built, deployed, and maintained a variety of systems, including Windows, macOS, and Linux computers.</li>
+                <li>Administered devices such as computers and iPads using Mobile Device Management (MDM) solutions, including Jamf Pro, Intune, and Kaseya.</li>
+                <li>Installed, monitored, and troubleshooted network and infrastructure devices, ensuring optimal performance and security.</li>
+                </ul>
+              </ul>
+            </div><!-- Edn Resume Item -->
+            
+            
+          </div>
+
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <h3 class="resume-title">Education</h3>
+            <br>
+            <div class="resume-item">
+              <h4>Bachelor of Science in Cloud Computing</h4>
+              <h5>2024</h5>
+              <p><em>Western Governors University</em></p>
+              <p>[Description]</p>
+            </div><!-- Edn Resume Item -->
+            
+            <div class="resume-item">
+              <h4>Software Developer Foundations</h4>
+              <h5>2023</h5>
+              <p><em>UMBC Training Centers</em></p>
+              <p>A comprehensive training program that focuses on developing Python and data analytics skills, covering topics such as Python programming fundamentals, data manipulation and analysis using libraries like Pandas and NumPy.</p>
+            </div><!-- Edn Resume Item -->            
+            
+            <div class="resume-item">
+              <h4>IT Support Technical Training</h4>
+              <h5>2021</h5>
+              <p><em>Per Scholas</em></p>
+              <p>A comprehensive 3-month IT training course covering CompTIA A+ certification, Google IT Support Professional certification, and professional development skills.</p>
+            </div><!-- Edn Resume Item -->
+            
+                      <!-- Download Button -->
+          <section id="download" class="download section">
+            <div class="container section-title" data-aos="fade-up">
+            </div>
+            <div class="container" data-aos="fade-up" data-aos-delay="100">
+              <div class="row justify-content-center">
+                <div class="col-lg-6">
+                  <a href="assets/etienne_res.pdf" class="btn btn-primary" download>Download Resume</a>
+                </div>
+              </div>
+            </div>
+          </section>
+          </div>
+
+        </div>
+
+      </div>
+
+    </section><!-- /Resume Section -->
+    
+    <!-- certifications Section - leaving certifications declaration--> 
+    <section id="certifications" class="certifications section">
+    <!-- certifications Section -->
+      
+        <!-- Section Title -->
+        <div class="container section-title" data-aos="fade-up">
+        <h2>Certifications</h2>
+        <br>
+        <p>Thanks to my Bachelor's program and rigorous self-studying, I was able to earn these certifications. Click a logo to view on Credly. Feel free to verify my certifications from <a href="https://www.linkedin.com/in/etienneci" target="_blank" style="color: #a5cff6;">LinkedIn</a>.</p>
+        </div><!-- End Section Title -->
+        <div class="container">
+          <div class="row gy-4">
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="service-item item-cyan position-relative">
+            <div class="icon">
+                <a href="https://www.credly.com/badges/e764437d-b3c7-4415-a1f7-972ceac034fd" title="View Credential" target="_blank"><img src="assets/img/a.png" alt="A+ Logo"></a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="service-item item-orange position-relative">
+              <div class="icon">
+                <a href="https://www.credly.com/badges/deff9de3-b7f0-4501-aaa8-f7c9e7c340ad" title="View Credential" target="_blank"><img src="assets/img/net.png" alt="Net+ Logo"></a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="service-item item-orange position-relative">
+              <div class="icon">
+                <a href="https://www.credly.com/badges/cfbdca72-7dba-4d29-b657-bea7107d6558" title="View Credential" target="_blank"><img src="assets/img/sec.png" alt="Sec+ Logo"></a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="400">
+            <div class="service-item item-orange position-relative">
+              <div class="icon">
+                <a href="https://www.credly.com/badges/f289b0d2-c2b4-4a9b-a20f-01d177710e24" title="View Credential" target="_blank"><img src="assets/img/cloud.png" alt="Cloud+ Logo"></a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="500">
+            <div class="service-item item-orange position-relative">
+              <div class="icon">
+                <a href="https://www.credly.com/badges/e15f8a0e-e30d-4537-8803-498f256b3a84" title="View Credential" target="_blank"><img src="assets/img/aws.png" alt="SAA Logo"></a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+          <div class="col-lg-3 col-md-6" data-aos="fade-up" data-aos-delay="600">
+            <div class="service-item item-orange position-relative">
+              <div class="icon">
+                <a href="https://www.credly.com/badges/6498e3f5-fecf-404c-a4e8-9dc08417132d" title="View Credential" target="_blank"><img src="assets/img/ccp.png" alt="CCP Logo"></a>
+              </div>
+            </div>
+          </div><!-- End Service Item -->
+        </div>
+      </div>
+      </div>
+      </div><!-- End row -->
+    </section><!-- End certifications Section -->
+    </section><!-- /certifications Section -->
+
+        </div>
+
+      </div>
+
+    </section><!-- /certifications Section -->
+
+    <!-- Portfolio Section -->
+    <section id="portfolio" class="portfolio section">
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Portfolio</h2>
+      <br>
+      <p>These are some of the personal and work projects I have done, with links to the GitHub repositories.</p>
+    </div><!-- End Section Title -->
+
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+          <div class="resume-item">
+            <h4>Cloud Resume Challenge</h4>
+            <p><em>GitHub: <a href="https://github.com/your-username/cloud-resume-challenge" target="_blank" style="color: #a5cff6;">Link</a></em></p>
+            <p>A personal project where I built a cloud-based resume using various cloud technologies.</p>
+            <ul>
+              <li>Synergized cross-functional teams to streamline IT support for over 1,000 end-users, including academic and administrative personnel.</li>
+              <li>Orchestrated the deployment and maintenance of heterogeneous systems, encompassing Windows, macOS, and Linux environments.</li>
+              <li>Leveraged Mobile Device Management (MDM) platforms such as Jamf Pro, Intune, and Kaseya to optimize device administration.</li>
+              <li>Implemented proactive monitoring and troubleshooting protocols to ensure peak network and infrastructure performance.</li>
+            </ul>
+          </div><!-- End Resume Item -->
+        </div>
+
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+          <div class="resume-item">
+            <h4>CI/CD Deployment</h4>
+            <p><em>GitHub: <a href="https://github.com/your-username/ci-cd-deployment" target="_blank" style="color: #a5cff6;">Link</a></em></p>
+            <p>A project focused on implementing Continuous Integration and Continuous Deployment for efficient software delivery.</p>
+            <ul>
+              <li>Implemented a robust CI/CD pipeline using Jenkins, GitHub Actions, and Docker to automate the build, test, and deployment processes.</li>
+              <li>Integrated automated testing frameworks such as Selenium and JUnit to ensure code quality and reliability.</li>
+              <li>Configured and managed Kubernetes clusters for container orchestration and scaling of applications.</li>
+              <li>Utilized Terraform for infrastructure as code (IaC) to provision and manage cloud resources efficiently.</li>
+            </ul>
+          </div><!-- End Resume Item -->
+        </div>
+      </div>
+
+      <div class="row">
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+          <div class="resume-item">
+            <h4>Lex Chatbot</h4>
+            <p><em>GitHub: <a href="https://github.com/your-username/lex-chatbot" target="_blank" style="color: #a5cff6;">Link</a></em></p>
+            <p>A project focused on building a chatbot using Amazon Lex for natural language processing and conversation management.</p>
+            <ul>
+              <li>Implemented a robust CI/CD pipeline using Jenkins, GitHub Actions, and Docker to automate the build, test, and deployment processes.</li>
+              <li>Integrated automated testing frameworks such as Selenium and JUnit to ensure code quality and reliability.</li>
+              <li>Configured and managed Kubernetes clusters for container orchestration and scaling of applications.</li>
+              <li>Utilized Terraform for infrastructure as code (IaC) to provision and manage cloud resources efficiently.</li>
+            </ul>
+          </div><!-- End Resume Item -->
+        </div>
+
+        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
+          <div class="resume-item">
+            <h4>Project 4</h4>
+            <p><em>GitHub: <a href="https://github.com/your-username/project-4" target="_blank" style="color: #a5cff6;">Link</a></em></p>
+            <p>Description of project 4.</p>
+            <ul>
+              <li>Implemented a robust CI/CD pipeline using Jenkins, GitHub Actions, and Docker to automate the build, test, and deployment processes.</li>
+              <li>Integrated automated testing frameworks such as Selenium and JUnit to ensure code quality and reliability.</li>
+              <li>Configured and managed Kubernetes clusters for container orchestration and scaling of applications.</li>
+              <li>Utilized Terraform for infrastructure as code (IaC) to provision and manage cloud resources efficiently.</li>
+            </ul>
+          </div><!-- End Resume Item -->
+        </div>
+      </div>
+    </div>
+  <br>
+  <footer id="footer" class="footer position-relative dark-background">
+    <div class="container">
+      <h5 class="sitename">Please feel free to contact me with any questions.</h5>
+      <br>
+      <div class="social-links d-flex justify-content-center">
+          <a href="https://github.com/digimodify" target="_blank"><i class="bi bi-github"></i></a>
+          <a href="https://www.linkedin.com/in/etienneci" target="_blank"><i class="bi bi-linkedin"></i></a>
+          <a href="mailto:chrisetienne1@gmail.com"><i class="bi bi-envelope"></i></a>
+          
+        </div>
+                
+      </div>
+      <div class="container">
+        <div class="copyright">
+          <!--<span>Copyright</span> <strong class="px-1 sitename">Alex Smith</strong> <span>All Rights Reserved</span> -->
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you've purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: [buy-url] -->
+          <!-- Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Scroll Top -->
+  <a href="#" id="scroll-top" class="scroll-top d-flex align-items-center justify-content-center"><i class="bi bi-arrow-up-short"></i></a>
+
+  <!-- Preloader -->
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="assets/vendor/php-email-form/validate.js"></script>
+  <script src="assets/vendor/aos/aos.js"></script>
+  <script src="assets/vendor/typed.js/typed.umd.js"></script>
+  <script src="assets/vendor/purecounter/purecounter_vanilla.js"></script>
+  <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
+  <script src="assets/vendor/glightbox/js/glightbox.min.js"></script>
+  <script src="assets/vendor/imagesloaded/imagesloaded.pkgd.min.js"></script>
+  <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
+  <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
+
+  <!-- Main JS File -->
+  <script src="assets\js\main.js"></script>
+
+  <script src="assets\js\counter.js"></script>
+
+
+</body>
+
+</html>
