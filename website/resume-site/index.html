@@ -1,16 +1,15 @@
-
 <!DOCTYPE html>
 <html lang="en">
 
 <head>
   <meta charset="utf-8">
   <meta content="width=device-width, initial-scale=1.0" name="viewport">
-  <title>Christian Etienne</title>
+  <title>Chris Etienne | Cloud Resume Challenge</title>
   <meta content="" name="description">
   <meta content="" name="keywords">
 
   <!-- Favicons -->
-  <link href="assets/img/site-icon.jpg" rel="icon">
+  <link href="assets/img/site-icon.png" rel="icon">
   <link href="assets/img/site-icon.png" rel="site-icon">
 
   <!-- Fonts -->
@@ -42,18 +41,19 @@
 
   <nav id="navmenu" class="navmenu">
     <ul>
-      <li><a href="#hero" class="active"><i class="bi bi-house navicon"></i><span style="font-size: small;">Home</span></a></li>
-      <li><a href="#about"><i class="bi bi-person navicon"></i><span style="font-size: small;">About</span></a></li>
+      <li><a href="#hero" class="active"><i class="fa-solid fa-house"></i><span style="font-size: small;">Home</span></a></li>
+      <li><a href="#about"><i class="fa-regular fa-address-card"></i><span style="font-size: small;">About</span></a></li>
       <li><a href="#skills"><i class="bi bi-tools navicon"></i><span style="font-size: small;">Skills/Tools</span></a></li>
       <li><a href="#resume"><i class="bi bi-file-earmark-text navicon"></i><span style="font-size: small;">Resume</span></a></li>
       <li><a href="#certifications"><i class="bi bi-award navicon"></i><span style="font-size: small;">Certification</span></a></li>
-      <li><a href="#portfolio"><i class="bi bi-github navicon"></i><span style="font-size: small;">Portfolio</span></a></li>
-      </ul>
+      <li><a href="#portfolio"><i class="bi bi-github navicon"></i><span style="font-size: small;">Projects</span></a></li>      
+      <li><a href="#visitors"><i class="fa-solid fa-user"></i><span style="font-size: small;">Visitors: <span class="visits" style="color: #40fd06;font-size: 1.5em;"></span></span></a></li>
+  </ul>
   </nav>
   </nav>
+
 
 </header>
-
   <main class="main">
    
     <!-- Hero Section -->
@@ -66,9 +66,9 @@
             <h2>Christian Etienne</h2>
             <p>I'm a <span class="typed" data-typed-items="Cloud Engineer, Developer, Systems Administrator, Help Desk Technician, Team Player, Problem Solver">Designer</span><span class="typed-cursor typed-cursor--blink" aria-hidden="true"></span></p>
             <div class="social-links">
-              <a href="https://github.com/digimodify" target="_blank" style="color: #2d8feb;"><i class="bi bi-github"></i></a>
-              <a href="https://www.linkedin.com/in/etienneci" target="_blank" style="color: #2d8feb;"><i class="bi bi-linkedin"></i></a>
-              <a href="javascript:void(0);" onclick="copyEmail()" style="color: #2d8feb;" title="chrisetienne1@gmail.com"><i class="bi bi-envelope"></i></a>
+              <a href="https://github.com/digimodify" target="_blank" style="color: #2d8feb;" class="icon zoom"><i class="bi bi-github"></i></a>
+              <a href="https://www.linkedin.com/in/etienneci" target="_blank" style="color: #2d8feb;" class="icon zoom"><i class="bi bi-linkedin"></i></a>
+              <a href="javascript:void(0);" onclick="copyEmail()" style="color: #2d8feb;" class="icon zoom" title="chrisetienne1@gmail.com"><i class="bi bi-envelope"></i></a>
               
               <script>
                 function copyEmail() {
@@ -80,9 +80,7 @@
                   });
                 }
               </script>
-            </div>
-            <br>
-            <a style="color: #ffffff; font-size: 1.5em;"> Visitors: </a> <a class="visits" style="color: #40fd06;font-size: 1.5em;"></a>            
+            </div>                                   
           </div>
         </div>
       </div>
@@ -102,7 +100,7 @@
 
         <div class="row gy-4 justify-content-center">
           <div class="col-lg-4">
-        <img src="assets/img/bear.jpg" class="img-fluid" alt="">
+        <img src="assets/img/profile.png" class="img-fluid" alt="">
           </div>
           <div class="col-lg-8 content">
         <h2>IT Professional &amp; Student at Western Governors University</h2>           
@@ -120,8 +118,9 @@
         </div>
         <p class="py-3"></p>
         <p>I am a Systems Support Technician with 4 years of professional experience in IT and over a decade in customer service. I recently earned my Bachelor's degree in Cloud Computing from Western Governors University, solidifying my expertise in cloud technologies and infrastructure management.
-        <p>Throughout my academic and professional journey, I was able to gain a deep understanding of the strategies and tools used to improve businesses' infrastructure, operations, and security. I am a self-starter who thrives working both independently and within teams, always driven by a passion for continuous learning and problem-solving.</p>
-        <p>As I transition into the next phase of my career, I am excited to apply my knowledge of cloud technologies to help organizations optimize their IT environments and embrace innovative solutions.</p>
+        <p>Once upon a time I tried to become a home-labber. Of course, I didn't have the hardware for it, but I did have fun learning with VirtualBox. I did use VirtualBox a bit for work too, but also things like Ubuntu Server, LXD, Ansible, IPMI Provisioning. After that, I wanted to learn more and open up my opportunities, so that journey was paused and I decided to enroll.</p>  
+        <p>Now that I've finished my degree, I'm even more excited to learn more and getting back into many new projects.</p>
+        
         </p>
           </div>
         </div>
@@ -140,69 +139,90 @@
     <h2>Skill & Tools</h2>
     <br>
     <p>Here are some of the skills and tools I have experience with and continue to improve upon.</p>
+    <p>Select the icon to learn more about the technology.</p>
   </div>
 </section><!-- /Skills Section -->
 <!-- Icon Cards Section -->
 <section class="icon-cards" data-aos="fade-up">
-  <div class="container my-element"></div>
-  <ul>
-    <li style="--accent-color:#60c5a6">
-      <div class="icon"><i class="fa-brands fa-aws"></i></div>
-      <div class="title">AWS</div>
-      <div class="descr">Amazon Web Services is a cloud computing platform by Amazon.</div>
-    </li>
-    <li style="--accent-color:#f20071">
-      <div class="icon"><img src="assets/img/azure.png" alt="Azure Logo"></div>
-      <div class="title">Azure</div>
-      <div class="descr">Microsoft Azure is a cloud computing service by Microsoft.</div>
-    </li>
-    <li style="--accent-color:#FCBA35">
-      <div class="icon"><i class="fa-brands fa-docker"></i></div>
-      <div class="title">Docker</div>
-      <div class="descr">Docker delivers software in containers using OS-level virtualization.</div>
-    </li>
-    <li style="--accent-color:#DAE438">
-      <div class="icon"><i class="fa-solid fa-code-compare"></i></div>
-      <div class="title">GitHub Actions</div>
-      <div class="descr">GitHub Actions automates your build, test, and deployment pipeline.</div>
-    </li>
-    <li style="--accent-color:#994D7F">
-      <div class="icon"><i class="fa-brands fa-github"></i></div>
-      <div class="title">GitHub</div>
-      <div class="descr">GitHub is a code hosting platform for version control and collaboration.</div>
-    </li>
-  </ul>
-  <ul>
-    <li style="--accent-color:#FF5733">
-      <div class="icon"><i class="fa-brands fa-python"></i></div>
-      <div class="title">Python</div>
-      <div class="descr">Python is a high-level, interpreted programming language.</div>
-    </li>
-    <li style="--accent-color:#4285F4">
-      <div class="icon"><img src="assets/img/bash.png" alt="Bash Logo"></div>
-      <div class="title">Bash</div>
-      <div class="descr">Bash is a Unix shell and command language.</div>
-    </li>
-    <li style="--accent-color:#007ACC">
-      <div class="icon"><img src="assets/img/pwsh.png" alt="PowerShell Logo"></div>
-      <div class="title">PowerShell</div>
-      <div class="descr">PowerShell is a task automation and configuration management framework from Microsoft.</div>
-    </li>
-    <li style="--accent-color:#61DAFB">
-      <div class="icon"><i class="fa-solid fa-t"></i></div>
-      <div class="title">Terraform</div>
-      <div class="descr">Terraform is an open-source infrastructure as code software tool by HashiCorp.</div>
-    </li>
-    <li style="--accent-color:#563D7C">
-      <div class="icon"><i class="fa-solid fa-a"></i></div>
-      <div class="title">Ansible</div>
-      <div class="descr">Ansible is an open-source software provisioning, configuration management, and application-deployment tool.</div>
-    </li>
-  </ul>
-  <div class="credits">
-    <a target="_blank" href="https://www.freepik.com/premium-vector/modern-3d-infographic-template-with-5-steps-success_5957879.htm">inspired by</a>
+  <div class="container">
+    <ul>
+      <li style="--accent-color:#003780">
+        <a href="https://aws.amazon.com/" target="_blank" style="color: #0c23a7;">
+          <div class="icon"><i class="fa-brands fa-aws"></i></div>
+          <div class="title">Amazon Web Services</div>
+        </a>
+        <div class="descr">Amazon Web Services is a cloud computing platform by Amazon.</div>
+      </li>
+      <li style="--accent-color:#004db3">
+        <a href="https://azure.microsoft.com/" target="_blank" style="color: #004db3;">
+          <div class="icon"><img src="assets/img/azure.png" alt="Azure Logo"></div>
+          <div class="title">Microsoft Azure</div>
+        </a>
+        <div class="descr">Microsoft Azure is a cloud computing service by Microsoft.</div>
+      </li>
+      <li style="--accent-color:#0058cc">
+        <a href="https://www.docker.com/" target="_blank" style="color: #0058cc;">
+          <div class="icon"><i class="fa-brands fa-docker"></i></div>
+          <div class="title">Docker Containers</div>
+        </a>
+        <div class="descr">Docker delivers software in containers using OS-level virtualization.</div>
+      </li>
+      <li style="--accent-color:#006eff">
+        <a href="https://github.com/features/actions" target="_blank" style="color: #006eff;">
+          <div class="icon"><i class="fa-solid fa-code-compare"></i></div>
+          <div class="title">GitHub Actions</div>
+        </a>
+        <div class="descr">GitHub Actions automates your build, test, and deployment pipeline.</div>
+      </li>
+      <li style="--accent-color:#4d9aff">
+        <a href="https://github.com/" target="_blank" style="color: #4d9aff;">
+          <div class="icon"><i class="fa-brands fa-git"></i></div>
+          <div class="title">Source Control</div>
+        </a>
+        <div class="descr">Git is a distributed version control system. GitHub allows for hosting and collaborating on Git repos.</div>
+      </li>
+    </ul>
+    <ul>
+      <li style="--accent-color:#4d9aff">
+        <a href="https://www.python.org/" target="_blank" style="color: #4d9aff;">
+          <div class="icon"><i class="fa-brands fa-python"></i></div>
+          <div class="title">Python Programming</div>
+        </a>
+        <div class="descr">Python is a high-level, interpreted programming language.</div>
+      </li>
+      <li style="--accent-color:#006eff">
+        <a href="https://www.gnu.org/software/bash/" target="_blank" style="color: #006eff;">
+          <div class="icon"><img src="assets/img/bash.png" alt="Bash Logo"></div>
+          <div class="title">Bash Scripting</div>
+        </a>
+        <div class="descr">Bash is a Unix shell and command language.</div>
+      </li>
+      <li style="--accent-color:#0058cc">
+        <a href="https://docs.microsoft.com/en-us/powershell/" target="_blank" style="color: #0058cc;">
+          <div class="icon"><img src="assets/img/pwsh.png" alt="PowerShell Logo"></div>
+          <div class="title">PowerShell Scripting</div>
+        </a>
+        <div class="descr">PowerShell is a task automation and configuration management framework from Microsoft.</div>
+      </li>
+      <li style="--accent-color:#004db3">
+        <a href="https://www.terraform.io/" target="_blank" style="color: #004db3;">
+          <div class="icon"><img src="assets/img/Terra.png" alt="Terraform Logo"></div>
+          <div class="title">Terraform IaC</div>
+        </a>
+        <div class="descr">Terraform is an open-source infrastructure as code software tool by HashiCorp.</div>
+      </li>
+      <li style="--accent-color:#003780">
+        <a href="https://www.ansible.com/" target="_blank" style="color: #003780;">
+          <div class="icon"><img src="assets/img/Ansible.png" alt="Ansible Logo"></div>
+          <div class="title">Ansible Automation</div>
+        </a>
+        <div class="descr">Ansible is an open-source software provisioning, configuration management, and application-deployment tool.</div>
+      </li>
+    </ul>
   </div>
+  
 </section>
+
 
 </section><!-- /Icon Cards Section --> 
       </div>
@@ -238,11 +258,11 @@
             <div class="resume-item">
               <h4>Technical Support Engineer</h4>
               <h5>2021 - 2022</h5>
-              <p><em>Thrive, Silver Spring, MD</em></p>
+              <p><em>Thrive NextGen, Bethesda, MD</em></p>
                 <ul>
-                <li>Collaborated with a team of three to provide comprehensive IT support for approximately 1,000 users, including students, faculty, and staff.</li>
+                <li>Collaborated with a team of three at Stone Ridge School of the Sacred Heart to provide comprehensive IT support for approximately 1,000 users, including students, faculty, and staff.</li>
                 <li>Built, deployed, and maintained a variety of systems, including Windows, macOS, and Linux computers.</li>
-                <li>Administered devices such as computers and iPads using Mobile Device Management (MDM) solutions, including Jamf Pro, Intune, and Kaseya.</li>
+                <li>Managed devices such as computers and iPads using Mobile Device Management (MDM) solutions, including Jamf Pro, Intune, and Kaseya.</li>
                 <li>Installed, monitored, and troubleshooted network and infrastructure devices, ensuring optimal performance and security.</li>
                 </ul>
               </ul>
@@ -258,7 +278,7 @@
               <h4>Bachelor of Science in Cloud Computing</h4>
               <h5>2024</h5>
               <p><em>Western Governors University</em></p>
-              <p>[Description]</p>
+              <p>I have achieved my B.S. in Cloud Computing from WGU, focusing on AWS technologies, with hands-on experience in cloud architecture, infrastructure management, and DevOps practices, while earning industry certifications to prepare for cloud engineering and solutions architect roles.</p>
             </div><!-- Edn Resume Item -->
             
             <div class="resume-item">
@@ -272,26 +292,30 @@
               <h4>IT Support Technical Training</h4>
               <h5>2021</h5>
               <p><em>Per Scholas</em></p>
-              <p>A comprehensive 3-month IT training course covering CompTIA A+ certification, Google IT Support Professional certification, and professional development skills.</p>
+              <p>A "40 Hour work week" style IT training course over 3 months covering CompTIA A+ certification, Google IT Support Professional certification, and professional development skills.</p>
             </div><!-- Edn Resume Item -->
             
-                      <!-- Download Button -->
+          <!-- Download Button -->
           <section id="download" class="download section">
             <div class="container section-title" data-aos="fade-up">
             </div>
             <div class="container" data-aos="fade-up" data-aos-delay="100">
               <div class="row justify-content-center">
-                <div class="col-lg-6">
-                  <a href="assets/etienne_res.pdf" class="btn btn-primary" download>Download Resume</a>
+                <div class="col-lg-6 text-center">
+                  <a href="assets/etienneci_resume_2024.pdf" class="btn btn-primary zoom-on-hover" download>Download Resume</a>
                 </div>
               </div>
             </div>
+            <style>
+              .zoom-on-hover {
+                transition: transform 0.3s ease;
+              }
+
+              .zoom-on-hover:hover {
+                transform: scale(1.5);
+              }
+            </style>
           </section>
-          </div>
-
-        </div>
-
-      </div>
 
     </section><!-- /Resume Section -->
     
@@ -303,89 +327,95 @@
         <div class="container section-title" data-aos="fade-up">
         <h2>Certifications</h2>
         <br>
-        <p>Thanks to my Bachelor's program and rigorous self-studying, I was able to earn these certifications. Click a logo to view on Credly. Feel free to verify my certifications from <a href="https://www.linkedin.com/in/etienneci" target="_blank" style="color: #a5cff6;">LinkedIn</a>.</p>
+        <p>Thanks to my Bachelor's program and rigorous self-studying, I was able to earn these certifications and badges.</p>
         </div><!-- End Section Title -->
-
-        <section id="portfolio" class="portfolio section">
-
-         
-          <div class="container">
-    
-            <div class="isotope-layout" data-default-filter="*" data-layout="masonry" data-sort="original-order">
-    
-              <ul class="portfolio-filters isotope-filters" data-aos="fade-up" data-aos-delay="100">
-                <li data-filter="*" class="filter-active">All</li>
-                <li data-filter=".filter-app">App</li>
-                <li data-filter=".filter-product">Card</li>
-                <li data-filter=".filter-branding">Web</li>
-              </ul><!-- End Portfolio Filters -->
-    
-              <div class="row gy-4 isotope-container" data-aos="fade-up" data-aos-delay="200">
-                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-certification">
-                  <img src="assets/img/a.png" class="img-fluid" alt="A+ Logo">
-                  <div class="portfolio-info">
-                    <h4>CompTIA A+</h4>
-                    <p>Certification</p>
-                    <a href="assets/img/a.png" title="CompTIA A+" data-gallery="portfolio-gallery-certification" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                    <a href="https://www.credly.com/badges/e764437d-b3c7-4415-a1f7-972ceac034fd" title="More Details" class="details-link" target="_blank"><i class="bi bi-link-45deg"></i></a>
-                  </div>
-                </div><!-- End Portfolio Item -->
-
-                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-certification">
-                  <img src="assets/img/net.png" class="img-fluid" alt="Net+ Logo">
-                  <div class="portfolio-info">
-                    <h4>CompTIA Network+</h4>
-                    <p>Certification</p>
-                    <a href="assets/img/net.png" title="CompTIA Network+" data-gallery="portfolio-gallery-certification" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                    <a href="https://www.credly.com/badges/deff9de3-b7f0-4501-aaa8-f7c9e7c340ad" title="More Details" class="details-link" target="_blank"><i class="bi bi-link-45deg"></i></a>
-                  </div>
-                </div><!-- End Portfolio Item -->
-
-                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-certification">
-                  <img src="assets/img/sec.png" class="img-fluid" alt="Sec+ Logo">
-                  <div class="portfolio-info">
-                    <h4>CompTIA Security+</h4>
-                    <p>Certification</p>
-                    <a href="assets/img/sec.png" title="CompTIA Security+" data-gallery="portfolio-gallery-certification" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                    <a href="https://www.credly.com/badges/cfbdca72-7dba-4d29-b657-bea7107d6558" title="More Details" class="details-link" target="_blank"><i class="bi bi-link-45deg"></i></a>
-                  </div>
-                </div><!-- End Portfolio Item -->
-
-                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-certification">
-                  <img src="assets/img/cloud.png" class="img-fluid" alt="Cloud+ Logo">
-                  <div class="portfolio-info">
-                    <h4>CompTIA Cloud+</h4>
-                    <p>Certification</p>
-                    <a href="assets/img/cloud.png" title="CompTIA Cloud+" data-gallery="portfolio-gallery-certification" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                    <a href="https://www.credly.com/badges/f289b0d2-c2b4-4a9b-a20f-01d177710e24" title="More Details" class="details-link" target="_blank"><i class="bi bi-link-45deg"></i></a>
-                  </div>
-                </div><!-- End Portfolio Item -->
-
-                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-certification">
-                  <img src="assets/img/aws.png" class="img-fluid" alt="SAA Logo">
-                  <div class="portfolio-info">
-                    <h4>AWS Certified Solutions Architect – Associate</h4>
-                    <p>Certification</p>
-                    <a href="assets/img/aws.png" title="AWS Certified Solutions Architect – Associate" data-gallery="portfolio-gallery-certification" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                    <a href="https://www.credly.com/badges/e15f8a0e-e30d-4537-8803-498f256b3a84" title="More Details" class="details-link" target="_blank"><i class="bi bi-link-45deg"></i></a>
-                  </div>
-                </div><!-- End Portfolio Item -->
-
-                <div class="col-lg-4 col-md-6 portfolio-item isotope-item filter-certification">
-                  <img src="assets/img/ccp.png" class="img-fluid" alt="CCP Logo">
-                  <div class="portfolio-info">
-                    <h4>AWS Certified Cloud Practitioner</h4>
-                    <p>Certification</p>
-                    <a href="assets/img/ccp.png" title="AWS Certified Cloud Practitioner" data-gallery="portfolio-gallery-certification" class="glightbox preview-link"><i class="bi bi-zoom-in"></i></a>
-                    <a href="https://www.credly.com/badges/6498e3f5-fecf-404c-a4e8-9dc08417132d" title="More Details" class="details-link" target="_blank"><i class="bi bi-link-45deg"></i></a>
-                  </div>
-                </div><!-- End Portfolio Item -->
-              </div><!-- End Portfolio Container -->
-    
-            </div>
-    
-          </div>
-    
+        
+        <section class="icon-cards" data-aos="fade-up">
+          <div class="container my-element"></div>
+            <ul>
+            <li style="--accent-color:#0058cc">
+              <div class="image-container"><img src="assets/img/saa.png" alt="AWS Certified Solutions Architect" /></div>
+              <div class="title" style="font-size: 1.0em;">AWS Certified Solutions Architect</div>
+              <div class="descr">
+                <strong>Credential ID:</strong> a363f6eef172403f<br>
+                8e2c3f236768bef6<br>
+                <a href="https://aws.amazon.com/verification" target="_blank" style="color: #0c23a7;"><strong>Verify Certification</strong></a>
+              </div>
+            </li>
+            
+            <li style="--accent-color:#0058cc">
+              <div class="image-container">
+              <img src="assets/img/ccp.png" alt="AWS Certified Cloud Practitioner" />
+              </div>
+              <div class="title" style="font-size: 1.0em;">AWS Certified Cloud Practitioner</div>
+              <div class="descr">
+                <strong>Credential ID:</strong> 633261f531b946fc<br>
+                b256b5c6151dd892<br>                
+                <a href="https://aws.amazon.com/verification" target="_blank" style="color: #0c23a7;"><strong>Verify Certification</strong></a>
+            </li>
+            <li style="--accent-color:#0058cc">
+              <div class="image-container">
+              <img src="assets/img/cloudplus.png" alt="CompTIA Cloud+" />
+              </div>
+              <div class="title" style="font-size: 1.0em;">CompTIA Cloud+</div>
+              <div class="descr">
+                <strong>Credential ID:</strong> JQEK907RBFE4Q2G7<br>
+                <a href="http://verify.CompTIA.org" target="_blank" style="color: #0c23a7"><strong>Verify Certification</strong></a></div>
+            </li>
+            <li style="--accent-color:#0058cc">
+              <div class="image-container">
+              <img src="assets/img/secplus.png" alt="CompTIA Security+" />
+              </div>
+              <div class="title" style="font-size: 1.0em;">CompTIA Security+</div>
+              <div class="descr">
+                <strong>Credential ID:</strong> PRXT02562ER11Z3D<br>
+                <a href="http://verify.CompTIA.org" target="_blank" style="color: #0c23a7"><strong>Verify Certification</strong></a></div>
+            </li>
+            <li style="--accent-color:#0058cc">
+              <div class="image-container">
+              <img src="assets/img/netplus.png" alt="CompTIA Network+" />
+              </div>
+              <div class="title" style="font-size: 1.0em;">CompTIA Network+</div>
+              <div class="descr">
+                <strong>Credential ID:</strong> VYRM16BH8PV110GP<br>
+                <a href="http://verify.CompTIA.org" target="_blank" style="color: #0c23a7"><strong>Verify Certification</strong></a></div>
+            </li>
+            </ul>
+            <ul>
+            <li style="--accent-color:#0058cc">
+              <div class="image-container"><img src="assets/img/aplus.png" alt="CompTIA A+" /></div>              
+              <div class="title" style="font-size: 1.0em;">CompTIA A+</div>
+              <div class="descr">
+                <strong>Credential ID:</strong> MZS824KPRDFQ1P9E<br>
+                <a href="http://verify.CompTIA.org" target="_blank" style="color: #0c23a7"><strong>Verify Certification</strong></a></div>
+            </li>
+            <li style="--accent-color:#0058cc">
+              <div class="image-container"><img src="assets/img/ITIL.png" alt="ITILv4 Foundations"></div>
+              <div class="title" style="font-size: 1.0em;">ITILv4</div>
+              <div class="descr">
+                <strong>Credential ID:</strong> GR671658973CE<br>
+                <a href="https://www.peoplecert.org/for-corporations/certificate-verification-service" target="_blank" style="color: #0c23a7;"><strong>Verify Certification</strong></a>
+            </li>
+            <li style="--accent-color:#0058cc">
+              <div class="image-container"><img src="assets/img/wgu-dev.png" alt="WGU Certified Cloud DevOps"></div>
+              <div class="title" style="font-size: 1.0em;">WGU Certified Cloud DevOps</div>
+              <div class="descr">
+                <a href="https://api.badgr.io/public/assertions/FHOn9xB8Q26nFAEae38Wcw?identity__email=cetie29%40wgu.edu" target="_blank" style="color: #0c23a7;"><strong>Verify Badge</strong></a></div>
+            </li>
+            <li style="--accent-color:#0058cc">
+              <div class="image-container"><img src="assets/img/wgu-sec.png" alt="WGU Certified Cloud Security"></div>
+              <div class="title" style="font-size: 1.0em;">WGU Certified Cloud Security</div>
+              <div class="descr">
+                <a href="https://api.badgr.io/public/assertions/LRrtVA2USCqTgEFWOUlpJg?identity__email=cetie29%40wgu.edu" target="_blank" style="color: #0c23a7;"><strong>Verify Badge</strong></a></div>
+            </li>
+            <li style="--accent-color:#0058cc">
+              <div class="image-container"><img src="assets/img/sdf.png" alt="WGU Certified Cloud Security"></div>
+              <div class="title" style="font-size: 1.0em;">Software Developer Foundations</div>
+              <div class="descr">
+                <a href="https://www.credly.com/badges/273969fa-cc3a-48b5-8fe2-d44e98311f1f/public_url" target="_blank" style="color: #0c23a7;"><strong>Verify Badge</strong></a></div>
+            </li>
+          </ul>
+          </ul>
         </section><!-- /Portfolio Section -->
 
     </section><!-- End certifications Section -->
@@ -399,75 +429,71 @@
 
     <!-- Portfolio Section -->
     <section id="portfolio" class="portfolio section">
-    <!-- Section Title -->
-    <div class="container section-title" data-aos="fade-up">
-      <h2>Portfolio</h2>
-      <br>
-      <p>These are some of the personal and work projects I have done, with links to the GitHub repositories.</p>
-    </div><!-- End Section Title -->
+      <!-- Section Title -->
+      <div class="container section-title" data-aos="fade-up">
+        <h2>Projects</h2>
+        <br>
+        <p>These are some of the personal and work projects I have done, with links to the GitHub repositories.</p>
+      </div><!-- End Section Title -->
 
-    <div class="container">
-      <div class="row">
-        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
-          <div class="resume-item">
-            <h4>Cloud Resume Challenge</h4>
-            <p><em>GitHub: <a href="https://github.com/your-username/cloud-resume-challenge" target="_blank" style="color: #a5cff6;">Link</a></em></p>
-            <p>A personal project where I built a cloud-based resume using various cloud technologies.</p>
-            <ul>
-              <li>Synergized cross-functional teams to streamline IT support for over 1,000 end-users, including academic and administrative personnel.</li>
-              <li>Orchestrated the deployment and maintenance of heterogeneous systems, encompassing Windows, macOS, and Linux environments.</li>
-              <li>Leveraged Mobile Device Management (MDM) platforms such as Jamf Pro, Intune, and Kaseya to optimize device administration.</li>
-              <li>Implemented proactive monitoring and troubleshooting protocols to ensure peak network and infrastructure performance.</li>
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="100">
+            <div class="resume-item">
+              <h4>Cloud Resume Challenge</h4>
+              <p><a href="https://github.com/digimodify/aws-cloud-resume-challenge" target="_blank" style="color: #a5cff6;">GitHub</a></em></p>
+              <p><a href="https://dev.to/etienneci/serverless-cloud-resume-challenge-4ic7" target="_blank" style="color: #a5cff6;">Blog Post</a></em></p>
+              <p>A personal project where I built a cloud-based resume using AWS.</p>
+              <ul>
+                <li>Developed a cloud-hosted resume website with visitor count functionality using AWS services.</li>
+                <li>Built a static frontend on S3 with HTML/CSS/JavaScript, delivered via CloudFront and a custom domain.</li>
+                <li>Designed a Python Lambda function that interacts with DynamoDB to track and retrieve visitor counts.</li>
+                <li>Automated infrastructure provisioning using AWS SAM templates.</li>
+                <li>Implemented CI/CD with GitHub Actions for continuous integration and deployment.</li>
+                <li>Ensured code reliability with unit tests for backend functionality.</li>
+              </ul>
+            </div><!-- End Resume Item -->
+          </div>
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
+            <div class="resume-item"></div>
+            <h4>Scripting and Automation Applications</h4>
+            <p><!-- <a href=" " target="_blank" style="color: #a5cff6;"> --> GitHub</a></em></p> 
+            <p>Scripting and Automation coursework - 2 goals and a collection of PowerShell scripts to handle mundane activities</p>             
+              <ul>
+              <li>Developed a series of PowerShell scripts to automate routine tasks across various operating systems, enhancing efficiency and reducing manual intervention.</li>
+              <li>Created a user-friendly menu system allowing users to execute tasks such as logging daily activities, managing files, and monitoring CPU and memory usage.</li>
+              <li>Implemented Active Directory management scripts to automate the creation and deletion of Organizational Units (OUs), including importing user data from CSV files to streamline user provisioning.</li>
+              <li>Designed SQL Server automation scripts for database management, including creating, deleting, and populating databases and tables with data from CSV files.</li>
+              <li>Employed error handling and logging mechanisms to ensure robust script execution and troubleshooting.</li>
+              </ul>
             </ul>
           </div><!-- End Resume Item -->
+          
+        <br>
+        <div style="padding: 20px;"></div>
+
+        <div class="row">
+          <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
+            <div class="resume-item">
+              <h4><em>Serverless Image Resizer (TBD)</h4>
+              <p><!--<a href="https://github.com/digimodify/serverless-image-resizer" target="_blank" style="color: #a5cff6;" -->GitHub</a></em></p>
+              <p><em>Design and implement a serverless image processing solution using AWS Lambda and S3 to automatically resize images upon upload.</em></p>
+              <ul>
+                <li><em>This is the next simple project I plan on working on. I am looking forward to keeping up the momentum with different projects and learning more about other tools and subjects.</em></li> 
+                <!--
+                <li>Configured S3 event triggers to invoke a Lambda function that resized images using the Python PIL library, optimizing images for web display.</li>
+                <li>Deployed the processed images to a separate S3 bucket for storage and accessibility.</li>
+                <li>Enhanced operational efficiency by automating image handling, reducing manual processing time, and minimizing storage costs.</li>
+              </ul>
+            </div> End Resume Item -->
+          </div>
         </div>
-
-        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="200">
-          <div class="resume-item">
-            <h4>CI/CD Deployment</h4>
-            <p><em>GitHub: <a href="https://github.com/your-username/ci-cd-deployment" target="_blank" style="color: #a5cff6;">Link</a></em></p>
-            <p>A project focused on implementing Continuous Integration and Continuous Deployment for efficient software delivery.</p>
-            <ul>
-              <li>Implemented a robust CI/CD pipeline using Jenkins, GitHub Actions, and Docker to automate the build, test, and deployment processes.</li>
-              <li>Integrated automated testing frameworks such as Selenium and JUnit to ensure code quality and reliability.</li>
-              <li>Configured and managed Kubernetes clusters for container orchestration and scaling of applications.</li>
-              <li>Utilized Terraform for infrastructure as code (IaC) to provision and manage cloud resources efficiently.</li>
-            </ul>
-          </div><!-- End Resume Item -->
-        </div>
-      </div>
-
-      <div class="row">
-        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="300">
-          <div class="resume-item">
-            <h4>Lex Chatbot</h4>
-            <p><em>GitHub: <a href="https://github.com/your-username/lex-chatbot" target="_blank" style="color: #a5cff6;">Link</a></em></p>
-            <p>A project focused on building a chatbot using Amazon Lex for natural language processing and conversation management.</p>
-            <ul>
-              <li>Implemented a robust CI/CD pipeline using Jenkins, GitHub Actions, and Docker to automate the build, test, and deployment processes.</li>
-              <li>Integrated automated testing frameworks such as Selenium and JUnit to ensure code quality and reliability.</li>
-              <li>Configured and managed Kubernetes clusters for container orchestration and scaling of applications.</li>
-              <li>Utilized Terraform for infrastructure as code (IaC) to provision and manage cloud resources efficiently.</li>
-            </ul>
-          </div><!-- End Resume Item -->
-        </div>
-
-        <div class="col-lg-6" data-aos="fade-up" data-aos-delay="400">
-          <div class="resume-item">
-            <h4>Project 4</h4>
-            <p><em>GitHub: <a href="https://github.com/your-username/project-4" target="_blank" style="color: #a5cff6;">Link</a></em></p>
-            <p>Description of project 4.</p>
-            <ul>
-              <li>Implemented a robust CI/CD pipeline using Jenkins, GitHub Actions, and Docker to automate the build, test, and deployment processes.</li>
-              <li>Integrated automated testing frameworks such as Selenium and JUnit to ensure code quality and reliability.</li>
-              <li>Configured and managed Kubernetes clusters for container orchestration and scaling of applications.</li>
-              <li>Utilized Terraform for infrastructure as code (IaC) to provision and manage cloud resources efficiently.</li>
-            </ul>
-          </div><!-- End Resume Item -->
+            
+          </div>
         </div>
       </div>
-    </div>
-  <br>
+    </section>
+  
   <footer id="footer" class="footer position-relative dark-background">
     <div class="container">
       <h5 class="sitename">Please feel free to contact me with any questions.</h5>
@@ -476,9 +502,8 @@
           <a href="https://github.com/digimodify" target="_blank"><i class="bi bi-github"></i></a>
           <a href="https://www.linkedin.com/in/etienneci" target="_blank"><i class="bi bi-linkedin"></i></a>
           <a href="mailto:chrisetienne1@gmail.com"><i class="bi bi-envelope"></i></a>
-          
-        </div>
-                
+                    
+        </div>                
       </div>
       <div class="container">
         <div class="copyright">
@@ -517,7 +542,6 @@
   <script src="assets\js\main.js"></script>
 
   <script src="assets\js\counter.js"></script>
-
 
 </body>
 
