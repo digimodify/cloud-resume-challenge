@@ -48,3 +48,5 @@ The architecture of this project includes:
 - [HTML/CSS Templates](https://bootstrapmade.com/)
 - [Font Awesome Icons](https://fontawesome.com/icons)
 - [CSS Snippets](https://freefrontend.com/css-cards/)
+
+
