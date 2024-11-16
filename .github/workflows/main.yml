@@ -8,10 +8,10 @@ jobs:
       # Check out the code from the repository
       - uses: actions/checkout@v4
 
-      # Set up Python 3.8
+      # Set up Python 3.9
       - uses: actions/setup-python@v4.6.0
         with:
-          python-version: 3.8
+          python-version: 3.9
 
       # Install dependencies
       - name: Install dependencies
@@ -46,11 +46,11 @@ jobs:
       # Check out the code from the repository
       - uses: actions/checkout@v3
 
-      # Set up Python 3.8
-      - name: Set up Python 3.8
+      # Set up Python 3.9
+      - name: Set up Python 3.9
         uses: actions/setup-python@v4
         with:
-          python-version: '3.8'
+          python-version: '3.9'
 
       # Set up AWS SAM CLI
       - uses: aws-actions/setup-sam@v2
