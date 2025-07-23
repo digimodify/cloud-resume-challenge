@@ -4,7 +4,7 @@
 
 ## 🌐 Live Site
 
-[![Website](https://img.shields.io/badge/Website-cetienne.cloud-37a779?style=for-the-badge&logo=amazonaws)](https://cetienne.cloud) [![Blog Post](https://img.shields.io/badge/Blog_Post-DevTo-37a779?style=for-the-badge&logo=dev.to)](https://dev.to/etienneci/serverless-cloud-resume-challenge-4ic7) [![Challenge](https://img.shields.io/badge/Challenge-Cloud_Resume-37a779?style=for-the-badge&logo=cloud)](https://cloudresumechallenge.dev/docs/the-challenge/aws/)
+🌐 **[Live Website](https://cetienne.cloud)** | 📝 **[Blog Post](https://dev.to/etienneci/serverless-cloud-resume-challenge-4ic7)** | 🏆 **[Challenge Details](https://cloudresumechallenge.dev/docs/the-challenge/aws/)**
 
 ## 📋 Project Overview
 
