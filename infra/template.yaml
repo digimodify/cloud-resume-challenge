@@ -116,6 +116,24 @@ Resources:
             Path: /visits
             Method: post
 
+  # Permissions required for Function URLs (public / no-auth)
+  HelloWorldInvokeFunctionPermission:
+    Type: AWS::Lambda::Permission
+    Properties:
+      FunctionName: !GetAtt HelloWorldFunction.Arn
+      Action: lambda:InvokeFunction
+      Principal: "*"
+      StatementId: AllowInvokeFunctionPublic
+
+  HelloWorldInvokeFunctionUrlPermission:
+    Type: AWS::Lambda::Permission
+    Properties:
+      FunctionName: !GetAtt HelloWorldFunction.Arn
+      Action: lambda:InvokeFunctionUrl
+      Principal: "*"
+      StatementId: AllowInvokeFunctionUrlPublic
+      FunctionUrlAuthType: NONE
+
 Outputs:
   # API Gateway endpoint URL for the Lambda function
   HelloWorldApi:
