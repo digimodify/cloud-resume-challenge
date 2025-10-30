@@ -123,7 +123,7 @@ Resources:
       FunctionName: !GetAtt HelloWorldFunction.Arn
       Action: lambda:InvokeFunction
       Principal: "*"
-      StatementId: AllowInvokeFunctionPublic
+      
 
   HelloWorldInvokeFunctionUrlPermission:
     Type: AWS::Lambda::Permission
@@ -131,7 +131,6 @@ Resources:
       FunctionName: !GetAtt HelloWorldFunction.Arn
       Action: lambda:InvokeFunctionUrl
       Principal: "*"
-      StatementId: AllowInvokeFunctionUrlPublic
       FunctionUrlAuthType: NONE
 
 Outputs:
