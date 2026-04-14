@@ -1,35 +1,35 @@
-import json # import modules
+import json
 import boto3
 
 dynamodb = boto3.resource('dynamodb')
 table = dynamodb.Table('cloud-resume-challenge')
 
+CORS_HEADERS = {
+    'Access-Control-Allow-Headers': '*',
+    'Access-Control-Allow-Origin': '*',
+    'Access-Control-Allow-Methods': '*'
+}
+
 def lambda_handler(event, context):
-    # Get the current visit count
-    response = table.get_item(
-        Key={
-            'ID': 'visits'
+    try:
+        # Atomically increment the counter and return the new value
+        response = table.update_item(
+            Key={'ID': 'visits'},
+            UpdateExpression='ADD #counter :increment',
+            ExpressionAttributeNames={'#counter': 'counter'},
+            ExpressionAttributeValues={':increment': 1},
+            ReturnValues='UPDATED_NEW'
+        )
+        visit_count = int(response['Attributes']['counter'])
+    except Exception as e:
+        return {
+            'statusCode': 500,
+            'headers': CORS_HEADERS,
+            'body': json.dumps({'error': str(e)})
         }
-    )
-    
-    visit_count = response['Item']['counter']
-    visit_count = int(visit_count) + 1
-    
-    # Update the visit count in DynamoDB
-    table.put_item(
-        Item={
-            'ID': 'visits',
-            'counter': visit_count
-        }
-    )
-    
-    # Return the updated visit count as JSON
+
     return {
         'statusCode': 200,
-        'headers': {
-            'Access-Control-Allow-Headers': '*',
-            'Access-Control-Allow-Origin': '*',
-            'Access-Control-Allow-Methods': '*'
-        },
+        'headers': CORS_HEADERS,
         'body': json.dumps({'counter': visit_count})
     }

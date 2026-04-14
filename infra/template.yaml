@@ -16,28 +16,40 @@ Resources:
   MyWebsite:
     Type: AWS::S3::Bucket
     Properties:
-      WebsiteConfiguration:
-        IndexDocument: index.html
-        ErrorDocument: error.html
       BucketName: my-resume-site-phantom
+      PublicAccessBlockConfiguration:
+        BlockPublicAcls: true
+        BlockPublicPolicy: true
+        IgnorePublicAcls: true
+        RestrictPublicBuckets: true
 
-  # Policy to allow public read access to the S3 bucket
+  # Policy to allow CloudFront (via OAC) to read from the S3 bucket
   MyWebsiteBucketPolicy:
     Type: AWS::S3::BucketPolicy
     Properties:
       Bucket: !Ref MyWebsite
       PolicyDocument:
-        Version: '2012-10-17'  # The policy version must be '2012-10-17'
+        Version: '2012-10-17'
         Statement:
-          - Sid: PublicReadGetObject
+          - Sid: AllowCloudFrontServicePrincipal
             Effect: Allow
-            Principal: "*"
+            Principal:
+              Service: cloudfront.amazonaws.com
             Action: s3:GetObject
-            Resource: !Join 
-              - ''
-              - - 'arn:aws:s3:::'
-                - !Ref MyWebsite
-                - /*
+            Resource: !Sub 'arn:aws:s3:::${MyWebsite}/*'
+            Condition:
+              StringEquals:
+                AWS:SourceArn: !Sub 'arn:aws:cloudfront::${AWS::AccountId}:distribution/${MyDistribution}'
+
+  # Origin Access Control so CloudFront can sign requests to the private S3 bucket
+  MyOAC:
+    Type: AWS::CloudFront::OriginAccessControl
+    Properties:
+      OriginAccessControlConfig:
+        Name: my-resume-site-oac
+        OriginAccessControlOriginType: s3
+        SigningBehavior: always
+        SigningProtocol: sigv4
       
   # CloudFront distribution for the website
   MyDistribution:
@@ -58,10 +70,11 @@ Resources:
           ForwardedValues:
             QueryString: false
         Origins:
-          - DomainName: my-resume-site-phantom.s3-website-us-east-1.amazonaws.com
+          - DomainName: !GetAtt MyWebsite.RegionalDomainName
             Id: myS3Origin
-            CustomOriginConfig:
-              OriginProtocolPolicy: http-only
+            S3OriginConfig:
+              OriginAccessIdentity: ""
+            OriginAccessControlId: !GetAtt MyOAC.Id
         Enabled: true   # Boolean value should not be in quotes
         DefaultRootObject: index.html
 
