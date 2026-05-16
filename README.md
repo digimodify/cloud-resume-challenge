@@ -1,45 +1,46 @@
 # ☁️ Cloud Resume Challenge - AWS
 
-> A serverless cloud resume website demonstrating modern cloud architecture and DevOps practices
+> **Archived project.** This was my personal resume site, previously live at cetienne.cloud. The site has since been rebuilt — this repo is preserved as a completed project demonstrating serverless AWS architecture and DevOps practices. Read the full writeup on [dev.to](https://dev.to/etienneci/serverless-cloud-resume-challenge-4ic7).
 
-## 🌐 Live Site
+![Site Demo](assets/demo.gif)
 
-🌐 **[Live Website](https://cetienne.cloud)** | 📝 **[Blog Post](https://dev.to/etienneci/serverless-cloud-resume-challenge-4ic7)** | 🏆 **[Challenge Details](https://cloudresumechallenge.dev/docs/the-challenge/aws/)**
+## Overview
+ 
+A serverless, full-stack resume site built on AWS as part of the [Cloud Resume Challenge](https://cloudresumechallenge.dev/docs/the-challenge/aws/) by Forrest Brazeal. The project covers cloud architecture, backend development, infrastructure as code, and CI/CD — all wired together into a working, deployed product.
+ 
+**What it demonstrates:**
+- Serverless AWS architecture (Lambda, DynamoDB, API Gateway)
+- Infrastructure as Code via AWS SAM / CloudFormation
+- Automated CI/CD with GitHub Actions
+- Frontend/backend integration with a live visitor counter
+- Unit testing with pytest
 
-## 📋 Project Overview
 
-This project serves as a **cloud-hosted resume** with a **real-time visitor counter**, demonstrating expertise in:
-
-- 🏗️ **Cloud Architecture** - AWS serverless infrastructure design
-- 💻 **Full-Stack Development** - Frontend and backend integration  
-- 🚀 **DevOps Practices** - CI/CD pipelines and infrastructure automation
-- 🧪 **Testing & Quality** - Unit testing and deployment validation
-
-## 🏗️ Architecture
+## Architecture
 
 The solution implements a **serverless architecture** using AWS services:
 
-### Frontend 🎨
+### Frontend
 - **S3 Static Hosting** - Website files storage and hosting
 - **CloudFront CDN** - Global content delivery and HTTPS
 - **Custom Domain** - Professional domain with Route 53 DNS
 
-### Backend ⚙️
+### Backend 
 - **API Gateway** - RESTful API endpoints
 - **Lambda Functions** - Python-based serverless compute
 - **DynamoDB** - NoSQL database for visitor count persistence
 
-### DevOps 🔄
+### DevOps 
 - **AWS SAM** - Infrastructure as Code templates
 - **GitHub Actions** - Automated CI/CD pipeline
 - **Unit Testing** - Automated testing for reliability
 
-## 📊 Architecture Diagram
+## Architecture Diagram
 
 ![Cloud Resume Architecture](https://dev-to-uploads.s3.amazonaws.com/uploads/articles/u76smf6r6f8a6fundjm3.jpg)
 *Serverless architecture designed with draw.io*
 
-## 🛠️ Technologies Used
+## Technologies Used
 
 | Category | Technologies |
 |----------|-------------|
@@ -50,7 +51,7 @@ The solution implements a **serverless architecture** using AWS services:
 | **CI/CD** | ![GitHub Actions](https://img.shields.io/badge/GitHub_Actions-2088FF?style=flat&logo=github-actions&logoColor=white) |
 | **Testing** | ![pytest](https://img.shields.io/badge/pytest-0A9EDC?style=flat&logo=pytest&logoColor=white) |
 
-## 🚀 Key Features
+## Key Features
 
 - ✅ **Serverless Architecture** - No server management required
 - ✅ **Real-time Visitor Counter** - Dynamic visitor tracking
@@ -61,7 +62,7 @@ The solution implements a **serverless architecture** using AWS services:
 - ✅ **Unit Testing** - Automated testing for code reliability
 - ✅ **Cost Optimized** - Serverless pay-per-use model
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 cloud-resume-challenge/
@@ -80,26 +81,38 @@ cloud-resume-challenge/
 └── 📄 README.md              # Project documentation
 ```
 
+## Tech Stack
+ 
+| Layer | Technology |
+|---|---|
+| Cloud | AWS |
+| IaC | AWS SAM, CloudFormation |
+| Backend | Python, Lambda, DynamoDB, API Gateway |
+| Frontend | HTML, CSS, JavaScript |
+| CI/CD | GitHub Actions |
+| Testing | pytest |
+
+
 ## 🔗 Useful Resources
 
 | Resource | Description |
 |----------|-------------|
-| [🏆 Cloud Resume Challenge](https://cloudresumechallenge.dev/docs/the-challenge/aws/) | The original challenge by Forrest Brazeal |
-| [📚 AWS SAM Documentation](https://aws.amazon.com/serverless/sam/) | Serverless Application Model guide |
-| [🎨 Bootstrap Templates](https://bootstrapmade.com/) | Professional HTML/CSS templates |
-| [🔧 GitHub Actions](https://docs.github.com/en/actions) | CI/CD automation documentation |
-| [🧪 pytest Documentation](https://docs.pytest.org/) | Python testing framework |
+| [ Cloud Resume Challenge](https://cloudresumechallenge.dev/docs/the-challenge/aws/) | The original challenge by Forrest Brazeal |
+| [ AWS SAM Documentation](https://aws.amazon.com/serverless/sam/) | Serverless Application Model guide |
+| [ Bootstrap Templates](https://bootstrapmade.com/) | Professional HTML/CSS templates |
+| [ GitHub Actions](https://docs.github.com/en/actions) | CI/CD automation documentation |
+| [ pytest Documentation](https://docs.pytest.org/) | Python testing framework |
 
 ## 📈 Project Metrics
 
-- **🚀 Deployment Time**: < 5 minutes via CI/CD
-- **⚡ Page Load Speed**: < 2 seconds globally
-- **💰 Monthly Cost**: < $1 USD (within AWS Free Tier)
-- **🔄 CI/CD Pipeline**: Automated testing and deployment
-- **📊 Uptime**: 99.9% availability via CloudFront
+- ** Deployment Time**: < 5 minutes via CI/CD
+- ** Page Load Speed**: < 2 seconds globally
+- ** Monthly Cost**: < $1 USD (within AWS Free Tier)
+- ** CI/CD Pipeline**: Automated testing and deployment
+- ** Uptime**: 99.9% availability via CloudFront
 
 ---
 
-*Built as part of the [Cloud Resume Challenge](https://cloudresumechallenge.dev/) to demonstrate cloud engineering skills* 🌟
+*Built as part of the [Cloud Resume Challenge](https://cloudresumechallenge.dev/) to demonstrate cloud engineering skills* 
 
 
