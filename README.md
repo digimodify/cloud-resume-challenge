@@ -2,7 +2,7 @@
 
 > **Archived project.** This was my personal resume site, previously live at cetienne.cloud. The site has since been rebuilt — this repo is preserved as a completed project demonstrating serverless AWS architecture and DevOps practices. Read the full writeup on [dev.to](https://dev.to/etienneci/serverless-cloud-resume-challenge-4ic7).
 
-![Site Demo](assets/demo.gif)
+![Site Demo](website/resume-site/assets/site-demo.gif)
 
 ## Overview
  
